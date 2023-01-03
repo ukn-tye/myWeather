@@ -3,14 +3,14 @@ const mykey = 'e6e2603e227b47a2f1a1b17ad72df419';
 
 let api;
 
-const wrapper = document.querySelector(".wrapper"),
+const hero = document.querySelector(".hero"),
 inputPart = document.querySelector(".input-part"),
 infoTxt = inputPart.querySelector(".info-txt"),
 inputField = inputPart.querySelector("input"),
 locationBtn = inputPart.querySelector("button"),
-weatherPart = wrapper.querySelector(".weather-part"),
+weatherPart = hero.querySelector(".weather-part"),
 wIcon = weatherPart.querySelector("img"),
-arrowBack = wrapper.querySelector("header i");
+arrowBack = hero.querySelector("header i");
 
 inputField.addEventListener("keyup", e => {
     if(e.key == "Enter" && inputField.value != ""){
@@ -77,10 +77,10 @@ function weatherDetails(info){
         infoTxt.classList.remove("pending", "error");
         infoTxt.innerText = "";
         inputField.value = "";
-        wrapper.classList.add("active");
+        hero.classList.add("active");
     }
 }
 
 arrowBack.addEventListener("click", ()=>{
-    wrapper.classList.remove("active");
+    hero.classList.remove("active");
 });

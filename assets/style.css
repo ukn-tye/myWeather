@@ -27,7 +27,7 @@ body{
   color: var(--vividYellow);
   background: var(--darkGrey);
 }
-.wrapper{
+.hero{
   width: 400px;
   background: var(--mediumGrey);
   border-radius: 7px;
@@ -46,7 +46,7 @@ body{
     color: white;
 }
 
-.wrapper header{
+.hero header{
   display: flex;
   font-size: 21px;
   font-weight: 500;
@@ -61,14 +61,14 @@ header i{
   cursor: pointer;
   margin-right: 8px;
 }
-.wrapper.active header i{
+.hero.active header i{
   margin-left: 5px;
   font-size: 30px;
 }
-.wrapper .input-part{
+.hero .input-part{
   margin: 20px 25px 30px;
 }
-.wrapper.active .input-part{
+.hero.active .input-part{
   display: none;
 }
 .input-part .info-txt{
@@ -128,14 +128,14 @@ header i{
   background: #fff;
 }
 
-.wrapper .weather-part{
+.hero .weather-part{
   display: none;
   margin: 30px 0 0;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.wrapper.active .weather-part{
+.hero.active .weather-part{
   display: flex;
 }
 .weather-part img{
